@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Ola mundo</title>
+        <script>
+            function realizarLogin(){
+                let usuario = document.getElementById("usuario").value;
+                let senha = document.getElementById("senha").value;
+
+                let usuariovalido = "caue";
+                let senhavalida = "1234";
+
+                if ((usuario == usuariovalido) && (senha == senhavalida)){
+                    alert("Login com sucesso");
+                }
+                else{
+                    alert("Login falhou")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+        usuario: <br>
+        <input type="text" id="usuario"> <br>
+        senha: <br>
+        <input type="password" id="senha"> <br><br>
+        <button type="button" onclick="realizarLogin()">Login</button>
+
+    </body>
+</html>
